@@ -4,7 +4,21 @@ $(document).ready(function(e) {
 	$('#image').click(function(e) {
         thaydoi();
     });
-	
+	$('#mytabs').tabs({
+		collapsible:true,
+		
+	});
+	//spinner
+	$('#myspinner').spinner({
+		min:0,
+		max:100,
+		step:2,
+		spin:function () {
+			var v1=$(this).spinner("value");
+			$('#spinnervalue').html(v1);
+		}
+
+	});
 });
 
 var status = 1;
@@ -43,6 +57,3 @@ function phongto(){
 	);	
 }
 
-$(document).ready(function(e) {
-    alert('xin chao');
-});
