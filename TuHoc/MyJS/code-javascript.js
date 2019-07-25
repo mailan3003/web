@@ -19,6 +19,30 @@ $(document).ready(function(e) {
 		}
 
 	});
+
+	//select menu
+	//dinh nghia lai ham render selecmenu
+	$.widget("custom.selectmenuwithavatar", $.ui.selectmenu,
+		{
+			_renderItem: function(ul, item){
+				//moi item la mot the lis
+				var li = $('<li>'), 
+				//moi the li chua the div la mot noi dung
+				wrapper=$("div", {text:item.label});
+				if(item.disable){
+					li.addClass("ui-state-disable");
+				}
+				$("<span>", {
+					style:item.element.attr("datastyle"),
+					"class": item.element.attr("dataclass")+"ui-icon"
+				}).appendTo(wrapper);
+			}
+		}
+	);
+	//checkbox radio
+	$('input.mycheckboxradioclass').checkboxradio({
+		icon : false
+	});
 });
 
 var status = 1;
