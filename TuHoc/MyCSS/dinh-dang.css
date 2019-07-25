@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*body{
+	margin:30px;	
+}
+
+.newCss{
+	background-color:#d1f4g5
+}
+
+#hinh{
+ width: 500px;
+ height: 800px;	
+}
+
+#hinh.hinhanh1{
+	width: 500px;	
+}
+
+#hinh.hinhanh2{
+	width: 800px;	
+}
+
+#hinh.hinhanh3{
+	width: 1200px;	
+}
+
+
+#btbChangeImage{
+ 	margin: 10px;
+	padding:10px;
+	width:500px;
+	text-align:center;
+	border: 1px solid #09F;
+	cursor:pointer;	
+}
+*/
+
+.btb{
+	margin: 10px;
+	padding:10px;
+	width: 400px;
+	text-align:center;
+	border:2px solid #C06;
+	cursor:pointer;
+	float:right;
+	background:#CF9;
+}
+.btb:hover{
+	background:#903;	
+}
+#image{
+	width: 500px;
+	height: 300px;	
+	opacity:0.2;
+}
