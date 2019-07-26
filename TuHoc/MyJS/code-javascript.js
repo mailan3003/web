@@ -43,6 +43,22 @@ $(document).ready(function(e) {
 	$('input.mycheckboxradioclass').checkboxradio({
 		icon : false
 	});
+
+	//graggable
+	$('#mydraggable').draggable({
+		//containment: "parent"
+		//scroll: true,
+		//revert: true,
+		//helper:"clone"
+		drag: function(){
+			$(this).css("background-color", "black");	
+		},
+		stop:function(){
+				$(this).css("background-color", "green");
+			}
+	});
+	//droppable
+	$('#mydroppable').droppable();
 });
 
 var status = 1;
