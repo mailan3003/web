@@ -59,6 +59,16 @@ $(document).ready(function(e) {
 	});
 	//droppable
 	$('#mydroppable').droppable();
+
+	//resizeable
+	$('#resizable_1').resizable({
+
+	});
+	$('#resizable_2').resizable({
+		alsoResize:'#resizable_1',
+		//aspectRatio:4/3
+		animate : true
+	});
 });
 
 var status = 1;
